@@ -1,0 +1,100 @@
+---
+title: "Volcano Plot Example"
+author: "Philip Sweet"
+date: "2023-08-18"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+## Load Libraries 
+library(tidyverse)
+library(cowplot)
+library(ggrepel)
+
+## Read in data 
+read.csv("total_sone.csv", header = TRUE) %>% 
+  separate(Condition, into= c("Media","Dose","Rep"), sep = "_", remove = TRUE) -> seq_data
+
+read.csv("vol_data.csv", header = TRUE) -> vol_classes
+
+```
+
+
+```{r Vol plot setup}
+
+
+## Format data for the plot
+seq_data %>%
+  full_join(vol_classes, by = c("old_locus_tag" = "Gene.ID")) %>%
+  ## define color/class
+  mutate(Class = ifelse(is.na(Class), "Other", as.character(Class))) %>%
+  mutate(colorcode = ifelse(log2FoldChange > 0.7 & padj < 0.05, Class, ifelse(log2FoldChange < -0.7 & padj < 0.05, Class, "" ))) %>% 
+  mutate(colorcode = ifelse(is.na(colorcode), "", colorcode)) %>%
+  ## select gene names to show
+  mutate(sig_name = ifelse(log2FoldChange > 0.7 & padj < 0.05, as.character(Name), ifelse(log2FoldChange < -0.7 & padj < 0.05, as.character(Name), ""))) %>%
+  mutate(sig_name = ifelse(Biotype == "ncRNA" & padj < 0.05 & is.na(sig_name), "ncRNA", sig_name)) %>%
+  mutate(sig_name = ifelse(is.na(sig_name), "", sig_name)) -> vol_data 
+
+
+## Define colors for the classes
+
+vol_data$colorcode <- factor(vol_data $colorcode)
+
+s_Colors <- c("#BABABA","#FF0000","#46ACC8", "#59A14F", "#B40F20", "#E58601","#F3DF6C")
+names(s_Colors) <- levels(vol_data$colorcode)
+
+s_names <- c("padj > 0.05", "SOS Genes","General Stress", "Lambda", "Mu1", "Mu2" ,"Other")
+names(s_names) <- levels(vol_data$colorcode)  # Define which dose gets what name
+
+
+vol_scale <- scale_colour_manual(name = "Gene Classes", values = s_Colors, labels= s_names) # Create the scale
+
+```
+
+
+```{r VolPlot 40Gy}
+
+vol_data %>%
+  filter(Dose == "40") %>% ## select data for plot
+  ggplot() +
+        geom_point(aes(x=log2FoldChange, y=-log10(padj), colour=colorcode), size = 1) +
+        ggtitle("DE Genes by Class at 40Gy") +
+        xlab("log2 fold change") + 
+        ylab("-log10 adjusted p-value") +
+        scale_y_continuous(limits = c(0,50)) +
+        theme(plot.title = element_text(size = rel(1.5), hjust = 0.5),
+            axis.title = element_text(size = rel(1.25))) +
+        theme_cowplot() +
+        vol_scale -> vol_40
+
+vol_40
+  
+ ggsave("40e_volc_plot.tiff", vol_40)
+ 
+```
+```{r VolPlot 1Gy}
+
+vol_data %>%
+  filter(Dose == "1") %>%
+   filter(Media == "LB") %>%
+  ggplot() +
+        geom_point(aes(x=log2FoldChange, y=-log10(padj), colour=colorcode), size = 1) +
+        ggtitle("1Gy DE LB") +
+        xlab("log2 fold change") + 
+        ylab("-log10 adjusted p-value") +
+        geom_text_repel(aes(x=log2FoldChange, y=-log10(padj),label = sig_name),
+    size = 3,
+    box.padding = unit(0.35, "lines"),
+    point.padding = unit(0.3, "lines")) +
+        theme(plot.title = element_text(size = rel(1.5), hjust = 0.5),
+              axis.title = element_text(size = rel(1.25))) +
+  theme_cowplot() +
+        vol_scale -> vol_1
+
+vol_1
+  
+ ggsave("1_volc_plot.tiff", vol_1)
+ 
+```

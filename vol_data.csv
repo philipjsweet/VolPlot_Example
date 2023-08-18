@@ -1,0 +1,249 @@
+Gene.ID,Name,Class,Cluster
+SO_4604,sulA,DNA Damage,
+SO_0393,fis,DNA Damage,
+SO_0690,SO_0690,DNA Damage,
+SO_1114,dinP,DNA Damage,
+SO_1758,yafY,DNA Damage,
+SO_1819,dinG,DNA Damage,
+SO_1820,polB,DNA Damage,
+SO_3061,topB,DNA Damage,
+SO_3430,recA,DNA Damage,
+SO_3462,recN,DNA Damage,
+SO_3917,dnaB,DNA Damage,
+SO_4364,recG,DNA Damage,
+SO_4603,lexA,DNA Damage,
+SO_4669,polA,DNA Damage,
+SO_A0012,umuC,DNA Damage,
+SO_A0013,umuD,DNA Damage,
+SO_0958,ahpC,ROS Stress,
+SO_3577,clpB,ROS Stress,
+SO_4162,hslV,ROS Stress,
+SO_4163,hslU,ROS Stress,
+SO_4697,gst,ROS Stress,
+SO_0452,trxC,ROS Stress,
+SO_0760,amt,ROS Stress,
+SO_1070,katB,ROS Stress,
+SO_1145,mgtE-1,ROS Stress,
+SO_1563,SO_1564,ROS Stress,
+SO_1158,SO_1158,ROS Stress,
+SO_0956,alpF,ROS Stress,
+SO_2178,ccpA,ROS Stress,
+SO_1158,dps,ROS Stress,
+SO_0976,ohr,ROS Stress,
+SO_4423,SO_4423,ROS Stress,
+SO_1807,pspA,ROS Stress,
+SO_3349,SO_3349,ROS Stress,
+SO_3790,sufE,ROS Stress,
+SO_3792,sufC,ROS Stress,
+SO_1937,fur,ROS Stress,
+SO_2881,sodB,ROS Stress,
+SO_0639,attL,Mu0,
+SO_0640,,Mu1,
+SO_0641,,Mu1,
+SO_4769,,Mu1,
+SO_0643,,Mu1,
+SO_0644,,Mu1,
+SO_0645,,Mu1,
+SO_0646,,Mu1,
+SO_0647,,Mu1,
+SO_0648,,Mu1,
+SO_0649,,Mu1,
+SO_0650,,Mu1,
+SO_0651,,Mu1,
+SO_0652,,Mu1,
+SO_0653,,Mu1,
+SO_0654,,Mu1,
+SO_0655,,Mu1,
+SO_0656,,Mu1,
+SO_0658,,Mu1,
+SO_0659,,Mu1,
+SO_0660,,Mu1,
+SO_0661,,Mu1,
+SO_0662,,Mu1,
+SO_0663,,Mu1,
+SO_0664,,Mu1,
+SO_0665,,Mu1,
+SO_0666,,Mu1,
+SO_0667,,Mu1,
+SO_0668,,Mu1,
+SO_4832,,Mu1,
+SO_0669,,Mu1,
+SO_0670,,Mu1,
+SO_0671,,Mu1,
+SO_0672,,Mu1,
+SO_0673,,Mu1,
+SO_0674,,Mu1,
+SO_0675,,Mu1,
+SO_0676,,Mu1,
+SO_0677,,Mu1,
+SO_0678,,Mu1,
+SO_0679,,Mu1,
+SO_0680,,Mu1,
+SO_0681,,Mu1,
+SO_0682,,Mu1,
+SO_0685,,Mu1,
+SO_0687,,Mu1,
+SO_0688,,Mu1,
+SO_0689,,Mu1,
+SO_0690,,Mu1,
+SO_0691,,Mu1,
+SO_2652,,Mu2,
+SO_2653,,Mu2,
+SO_2654,,Mu2,
+SO_2655,,Mu2,
+SO_2656,,Mu2,
+SO_2657,,Mu2,
+SO_2658,,Mu2,
+SO_2659,,Mu2,
+SO_2660,,Mu2,
+SO_4787,,Mu2,
+SO_2661,,Mu2,
+SO_4788,,Mu2,
+SO_2663,,Mu2,
+SO_2664,,Mu2,
+SO_2665,,Mu2,
+SO_2666,,Mu2,
+SO_2667,,Mu2,
+SO_4789,,Mu2,
+SO_2668,,Mu2,
+SO_2669,,Mu2,
+SO_2670,,Mu2,
+SO_2671,,Mu2,
+SO_2672,,Mu2,
+SO_2673,,Mu2,
+SO_2674,,Mu2,
+SO_2675,,Mu2,
+SO_2676,,Mu2,
+SO_2677,,Mu2,
+SO_2678,,Mu2,
+SO_2679,,Mu2,
+SO_2680,,Mu2,
+SO_2681,,Mu2,
+SO_2682,,Mu2,
+SO_2683,,Mu2,
+SO_2684,,Mu2,
+SO_2685,,Mu2,
+SO_2686,,Mu2,
+SO_2687,,Mu2,
+SO_2688,,Mu2,
+SO_2689,,Mu2,
+SO_2690,,Mu2,
+SO_2691,,Mu2,
+SO_2692,,Mu2,
+SO_2693,,Mu2,
+SO_2694,,Mu2,
+SO_2695,,Mu2,
+SO_2697,,Mu2,
+SO_2698,,Mu2,
+SO_2699,,Mu2,
+SO_2700,,Mu2,
+SO_2701,,Mu2,
+SO_2702,,Mu2,
+SO_2703,,Mu2,
+SO_2704,,Mu2,
+SO_2705,,Mu2,
+SO_2706,,Mu2,
+SO_2707,,Mu2,
+SO_2708,,Mu2,
+SO_2710,,Mu2,
+SO_2938,,Lambda,Tail
+SO_2939,,Lambda,Tail
+SO_4790,,Lambda,Tail
+SO_2940,,Lambda,Tail
+SO_2941,,Lambda,Tail
+SO_2942,,Lambda,Tail
+SO_2944,,Lambda,Tail
+SO_2945,,Lambda,Tail
+SO_2946,,Lambda,Tail
+SO_2947,,Lambda,Tail
+SO_2948,,Lambda,Tail
+SO_2949,,Lambda,Tail
+SO_2950,,Lambda,Tail
+SO_2951,,Lambda,Tail
+SO_2952,,Lambda,Tail
+SO_2953,,Lambda,Tail
+SO_2954,,Lambda,Tail
+SO_2955,,Lambda,Tail
+SO_2956,,Lambda,Tail
+SO_2957,,Lambda,Tail
+SO_2958,,Lambda,Tail
+SO_2959,,Lambda,Head
+SO_2960,,Lambda,Head
+SO_2961,,Lambda,Head
+SO_2962,,Lambda,Head
+SO_2963,,Lambda,Head
+SO_2964,,Lambda,Head
+SO_2965,,Lambda,Head
+SO_2966,,Lambda,Head
+SO_2967,,Lambda,Lysis
+SO_2968,,Lambda,Lysis
+SO_2969,,Lambda,Lysis
+SO_2970,,Lambda,Lysis
+SO_2971,,Lambda,Lysis
+SO_2972,,Lambda,Lysis
+SO_2973,,Lambda,Lysis
+SO_2974,,Lambda,Lysis
+SO_4791,,Lambda,Unknown
+SO_2975,,Lambda,Unknown
+SO_2976,,Lambda,Unknown
+SO_4792,,Lambda,Unknown
+SO_2977,,Lambda,Unknown
+SO_2978,,Lambda,Unknown
+SO_2979,,Lambda,Unknown
+SO_2980,,Lambda,Unknown
+SO_2981,,Lambda,Unknown
+SO_2982,,Lambda,Unknown
+SO_2983,,Lambda,Unknown
+SO_2984,P,Lambda,Replication
+SO_2985,O,Lambda,Replication
+SO_2986,,Lambda,Replication
+SO_2987,,Lambda,Replication
+SO_2988,CII,Lambda,Replication
+SO_2989,Cro,Lambda,Replication
+SO_2990,CI,Lambda,Lysogenic
+SO_2991,,Lambda,
+SO_2992,,Lambda,
+SO_4793,SO_4793,Lambda,
+SO_2993,,Lambda,
+SO_2995,,Lambda,
+SO_2997,,Lambda,
+SO_2998,,Lambda,
+SO_2999,,Lambda,
+SO_3000,,Lambda,
+SO_3001,,Lambda,
+SO_3002,,Lambda,
+SO_3003,,Lambda,
+SO_3004,,Lambda,
+SO_3005,,Lambda,
+SO_3006,,Lambda,
+SO_4794,,Lambda,
+SO_3007,,Lambda,
+SO_3008,,Lambda,
+SO_3009,,Lambda,
+SO_3010,,Lambda,
+SO_4795,,Lambda,
+SO_3012,,Lambda,
+SO_3013,,Lambda,
+SO_3014,,Lambda,
+SO_3015,,Lambda,
+SO_3016,,Lambda,
+SO_3017,,Lambda,
+SO_1126,dnak,General Stress,
+SO_0703,groES,General Stress,
+SO_2016,htpG,General Stress,
+SO_1524,grpE,General Stress,
+SO_1794,clpP,General Stress,
+SO_2728,htpX,General Stress,
+SO_2277,ibpA,General Stress,
+SO_1196,rrmJ,General Stress,
+SO_1796,Ion,General Stress,
+SO_2017,SO_2017,General Stress,
+SO_0345,prpB,General Stress,
+SO_0346,prpR,General Stress,
+SO_1756,SO_1756,General Stress,
+SO_1757,SO_1757,General Stress,
+SO_1758,SO_1758,General Stress,
+SO_3429,recX,DNA Damage,
+SO_2604,yegB,DNA Damage,
+SO_2603,,DNA Damage,
+SO_2778,FabH,Other,
