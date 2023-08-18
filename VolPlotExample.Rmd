@@ -14,7 +14,7 @@ library(cowplot)
 library(ggrepel)
 
 ## Read in data 
-read.csv("total_sone.csv", header = TRUE) %>% 
+read.csv("example_DE.csv", header = TRUE) %>% 
   separate(Condition, into= c("Media","Dose","Rep"), sep = "_", remove = TRUE) -> seq_data
 
 read.csv("vol_data.csv", header = TRUE) -> vol_classes
